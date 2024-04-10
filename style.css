@@ -164,51 +164,102 @@ h5 {
     margin: 1em ;
 }
 
-.navbar {
-    background-color: #ffffff;
-    padding: 10px;
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 80px;
+    padding: 0 3%;
+    background-color: white
+}
+
+nav h1{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-  }
-
-.logo{
-    height: 50px;
-
+    font: 32px bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.nav-links {
+nav div {
+    display: flex;
+    justify-content: end;
+    padding: 3% 0;
+}
+
+nav-button{
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0 10%;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
     list-style: none;
-    gap: 2rem;
-    align-content: end;
-    display: inline-flex;
-    margin-left: 500px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    justify-content: center;
 }
-.featureCard {
+
+nav li {
+    display: flex;
+    align-items: center;
+    margin: 0 4%;
+    font-weight: bold;
+} 
+
+#features-left{
+    display: grid;
+    grid-template-rows: 1fr; /* three rows defined here */
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+}
+
+.featuresleft1-0{
+    padding: 30% 40% 30% 20%;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    width: 270px;
-    height: 420px;
-    font-family: sans-serif;
-}
-#learnMore {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    width: 150px;
-    border: solid 1px black;
-    border-radius: 4px;
-    height: 48px;
-    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    /* background-color: white; */
+    background-color: rgb(223, 223, 222);
 
 }
-#subText {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font: 21px bolder;
-    color: black;
-    display: inline-flex;
+
+.featuresleft2-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.featuresleft2-0 div{
+    background-color: white;
+    height: 60%;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.features-left-2 button{
+    padding: 5% 12%;
+    border-radius: 5px;
+}
+#CTA-section {
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(223, 223, 222);
+}
+
+#cta-container {
+    width: 40%;
+}
+
+#cta-container h1 {
+    margin-bottom: 5%;
+}
+
+#cta-container p {
+    margin-bottom: 5%;
 }
 
 footer {
